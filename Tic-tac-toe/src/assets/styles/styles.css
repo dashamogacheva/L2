@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    background-color: #e6eae6;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app {
+    width: 260px;
+    height: 270px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.app_block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #000;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.app_block.active {
+    cursor: default;
+}
+
+.app_block.active.active_o {
+    color: #3E5EEEFF;
+}
+
+.app_block.active.active_x {
+    color: #d64c42;
+}
+
+button {
+    width: 260px;
+    padding: 8px;
+    background-color: #bfcade;
+    border: 1px solid #bfcade;
+    cursor: pointer;
+}
+
+#statistics_block {
+    margin-left: 30px;
+    width: 260px;
+    height: 270px;
+}
+
+.statistics {
+    margin-top: 10px;
+}
+
+#statistics_header {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.statistics_fields {
+    padding: 5px 0;
+}
+
+#firstPlayer {
+    color: #d64c42;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+#secondPlayer {
+    color: #3E5EEEFF;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+#other {
+    font-weight: 600;
+    font-size: 20px;
+}

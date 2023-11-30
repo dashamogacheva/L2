@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./assets/styles/styles.css">
+</head>
+<body>
+<div>
+    <h1>Крестики-нолики</h1>
+    <div class="app">
+        <div class="app_block" data-item="0"></div>
+        <div class="app_block" data-item="1"></div>
+        <div class="app_block" data-item="2"></div>
+        <div class="app_block" data-item="3"></div>
+        <div class="app_block" data-item="4"></div>
+        <div class="app_block" data-item="5"></div>
+        <div class="app_block" data-item="6"></div>
+        <div class="app_block" data-item="7"></div>
+        <div class="app_block" data-item="8"></div>
+    </div>
+    <button id="newGame">
+        Начать новую игру
+    </button>
+</div>
+<div id="statistics_block">
+    <div class="statistics">
+        <span id="statistics_header">Статистика побед:</span>
+        <div class="statistics_fields">
+            <span>
+                Побед 1 игрока:
+            </span>
+            <span id="firstPlayer">
+
+            </span>
+        </div>
+        <div class="statistics_fields">
+            <span>
+                Побед 2 игрока:
+            </span>
+            <span id="secondPlayer">
+
+            </span>
+        </div>
+        <div class="statistics_fields">
+            <span>
+                Ничья:
+            </span>
+            <span id="other">
+
+            </span>
+        </div>
+    </div>
+    <button id="clearStatistic">
+        Очистить данные статистики
+    </button>
+</div>
+
+</body>
+<script type="module" src="./js/main.js"></script>
+</html>
